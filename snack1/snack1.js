@@ -15,11 +15,11 @@ const tableName = "Tavolo Vip";
 
 const guests = ['Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo', 'Georgina Rodriguez', 'Chiara Ferragni',  'George Clooney', 'Amal Clooney', 'Fedez', 'Amadeus','Fiorello'];
 
-const placeholders = guests.map((guest , index) => {
+const placeholders = guests.map((guest , place) => {
     return{
         tableName: tableName,
         guestName: guest,
-        place: index + 1
+        place: place + 1
     };
 
 });
