@@ -62,3 +62,9 @@ console.log(uppercaseNames);
 //preparo la lista di chi ha un voto superiore a 70 col metodo filter
 const gradesOver70 = students.filter(student => student.grades > 70);
 console.dir(gradesOver70);
+
+//Dobbiamo creare una lista di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120
+// uso il metodo filter
+
+const selectionedStudents = gradesOver70.filter(student => student.id > 120);
+console.table(selectionedStudents);
