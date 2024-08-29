@@ -14,6 +14,7 @@ Id  Name                Grades
 102 Piero della Francesca   50
 120 Francesca da Polenta    84*/
 
+//preparo l'array
 const students = [
     {
         id: 213,
@@ -52,3 +53,8 @@ const students = [
     },
 ];
 console.dir(students)
+
+//preparo la lista dei nomi in maiuscolo, usando il metodo map
+const uppercaseNames = students.map(student => student.name.toUpperCase());
+
+console.log(uppercaseNames);
