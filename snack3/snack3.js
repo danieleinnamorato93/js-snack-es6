@@ -18,3 +18,10 @@ const racingBikes= [
 
 ];
 console.log(racingBikes)
+
+const lighterBike = racingBikes.reduce((min, racingBike)=>{
+    return racingBike.weight < min.weight ? racingBike : min ;
+});
+
+const {name, weight} = lighterBike;
+console.log(`La bici più leggera è la ${name},pesa circa ${weight}kg.`);
