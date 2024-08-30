@@ -1,28 +1,27 @@
 const teamsFootball = [ 
     {
         name:'Lipsia',
-        points:82,
-        fouls:9,
+        points:0,
+        fouls:0,
 
     },
     {
         name:'Liverpool',
-        points:90,
-        fouls:10,
+        points:0,
+        fouls:0,
 
     },
     {
         name:'Getafe',
-        points:30,
-        fouls:3,
+        points:0,
+        fouls:0,
 
     },
     {
         name:'Palermo',
-        points:60,
-        fouls:25,
+        points:0,
+        fouls:0,
 
     },
     
 ]
-console.table(teamsFootball)
