@@ -42,3 +42,15 @@ console.log(footbalTeams)
 
 const teamsFouls = footbalTeams.map(({name, fouls})  => ({name, fouls}));
 console.log(teamsFouls)
+
+//stampo in pagina (bonus)
+//richiamo l'output dal DOM
+const outputContainer = document.getElementById('output');
+
+//creo un paragrafo per ogni elemento dell'array e l'aggiungo all'ouput
+
+teamsFouls.forEach(({ name, fouls }) => {
+    const message = document.createElement('p');
+    message.textContent = ` Il ${name} ha subito ${fouls} falli.`;
+    outputContainer.appendChild(message);
+});
