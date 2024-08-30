@@ -25,3 +25,7 @@ const lighterBike = racingBikes.reduce((min, racingBike)=>{
 
 const {name, weight} = lighterBike;
 console.log(`La bici più leggera è la ${name},pesa circa ${weight}kg.`);
+
+const message = document.createElement('p');
+message.textContent =`La bici più leggera è la ${name},pesa circa ${weight}kg.`
+document.body.appendChild(message);
