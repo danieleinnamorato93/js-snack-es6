@@ -11,4 +11,17 @@ const people = [
     { nome: 'Sara', cognome: 'Conti', età: 26 },
     { nome: 'Davide', cognome: 'Moretti', età: 32 }
 ];
-console.log(people)
+
+const newArray = people.map(person => {
+    let canDrive; 
+
+    if (person.età >= 18) { 
+        canDrive = 'può guidare';
+    } else {
+        canDrive = 'non può guidare';
+    }
+
+    return `${person.nome} ${person.cognome} ${canDrive}.`; 
+});
+
+console.log(newArray);
